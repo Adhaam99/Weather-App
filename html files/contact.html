@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+
+    <!--Style-->
+
+    <link rel="stylesheet" href="../css files/all.min.css">
+    <link rel="stylesheet" href="../css files/bootstrap.min.css">
+    <link rel="stylesheet" href="../css files/style.css">
+    <link rel="stylesheet" href="../css files/contact.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+    <!--NavBar-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-5" id="navbar-example">
+        <div class="container">
+            <a class="navbar-brand d-flex" href="index.html"><img src="../images/logo@2x.png" alt="logo">
+                <div class="logo ms-3">
+                    <h1 class="fw-bold text-white fs-6 mb-1">Weather</h1>
+                    <p>tagline goes here</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white " aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">New</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">photo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="../html files/contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="breadcrumb rounded-pill d-flex align-items-center gap-2">
+                <a class="text-decoration-none" href="../index.html">Home</a>
+                <i class="fa-solid fa-arrow-right"></i>
+                <span>Contact</span>
+            </div>
+        </div>
+        <div class="block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="location overflow-hidden rounded-2">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="area"><i class="fa-solid fa-location-dot"></i><span>Company Name INC.
+                                    2803 Avenue Street, Los Angeles</span></div>
+                            <div class="phone"><i class="fa-solid fa-phone"></i><span>+1 800 314 235</span></div>
+                            <div class="mail"><i class="fa-solid fa-envelope"></i> <a href="#"
+                                    class="text-decoration-none">contact@companyname.com</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-1">
+                        <div class="contact-inputs">
+                            <h2>Contact us</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore
+                                ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum
+                                cum. Nisi facilis odit hic, ipsum sed!</p>
+                            <form class="position-relative">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class=" form-control rounded-5" id="search"
+                                            placeholder="Your name...">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class=" form-control rounded-5" id="search"
+                                            placeholder="Email Address...">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class=" form-control rounded-5" id="search"
+                                            placeholder="Company name...">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class=" form-control rounded-5" id="search"
+                                            placeholder="Website...">
+                                    </div>
+                                </div>
+
+                                <textarea name="message" class="form-control" placeholder="Message..."></textarea>
+                                
+                                <input type="submit" class="btn  rounded-5 ms-auto">submit</input>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="py-5 ">
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-8">
+                    <form class="position-relative mb-4">
+                        <input type="text" class="input-1 form-control rounded-5"
+                            placeholder="Enter Your Email to Subscribe">
+                        <button type="submit" class="btn btn-primary rounded-5">Subscribe</button>
+                    </form>
+                    <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-unstyled d-flex justify-content-center mt-3 gap-2">
+                        <li>
+                            <div class="icon-circle">
+                                <i class="fa-brands fa-lg  fa-facebook-f"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-circle">
+                                <i class="fa-brands fa-lg fa-twitter"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-circle">
+                                <i class="fa-brands fa-lg  fa-google-plus-g"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-circle">
+                                <i class="fa-brands fa-lg  fa-pinterest"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="../js files/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
