@@ -80,6 +80,20 @@ nav img {
     color: rgba(128, 128, 128, 0.756) !important;
 }
 
+main{
+
+    position: relative;
+    
+}
+
+.weather-table{
+
+    position: relative;
+    margin-top: -500px;
+    
+
+}
+
 .form-control:focus {
     color: white;
     background-color: var(--main-color);

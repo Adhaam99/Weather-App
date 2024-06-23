@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css files/all.min.css">
     <link rel="stylesheet" href="css files/bootstrap.min.css">
     <link rel="stylesheet" href="css files/style.css">
+    <link rel="stylesheet" href="css files/media.query.css">
 
 </head>
 
@@ -19,7 +20,7 @@
 
     <!--NavBar-->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary py-5" id="navbar-example">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-5 " id="navbar-example">
         <div class="container">
             <a class="navbar-brand d-flex" href="index.html"><img src="images/logo@2x.png" alt="logo">
                 <div class="logo ms-3">
@@ -33,7 +34,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item">
                         <a class="nav-link text-white active" aria-current="page" href="index.html">Home</a>
                     </li>
@@ -66,83 +67,85 @@
                     <button class="btn btn-primary rounded-5" id="find">Find</button>
                 </form>
 
-                
-
-
-                <div class="weather-table overflow-hidden d-flex flex-wrap rounded-3 mb-5">
-                    <div class="current-day ">
-                        <div class="date-1-3 d-flex justify-content-between">
-
-                            <div class="day" id="cDay"></div>
-
-                            <div class="date" id="cDate"></div>
-
-                        </div>
-
-                        <div class="content-1-3">
-                            <div class="location" id="location"></div>
-                            <div class="degree d-flex align-items-end flex-wrap">
-                                <div class="num" id="cNum"></div>
-
-                                <div class="current-icon">
-                                    <img src="" alt="" id="cIcon">
-                                </div>
-                            </div>
-                            <div class="custom" id="custom1">Sunny</div>
-
-                            <span><img src="images/icon-umberella.png" alt="umberella" id="humidity"> 20%</span>
-                            <span><img src="images/icon-wind.png" alt="wind" id="wind"> 18km/h</span>
-                            <span><img src="images/icon-compass.png" alt="icon-compass" id="direction">East</span>
-                        </div>
-                    </div>
-                    <div class="next-day text-center">
-
-                        <div class="date-2" id="day2"></div>
-                        <div class="content-2">
-
-                            <div class="icon">
-                                <img src="" alt="" id="icon2">
-                            </div>
-
-                            <div class="degree">
-                                <div class="num" id="num2"></div>
-                                <small id="small2">
-
-                                </small>
-                            </div>
-
-                            <div class="custom" id="custom2">
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="next-day text-center">
-
-                        <div class="date-1-3" id="day3">friday</div>
-                        <div class="content-1-3">
-
-                            <div class="icon">
-                                <img src="" id="icon3" alt="">
-                            </div>
-
-                            <div class="degree">
-
-                                <div class="num" id="num3">45.8 C</div>
-                                <small id="small3">
-                                    29.9 c
-                                </small>
-                            </div>
-
-                            <div class="custom" id="custom3">
-                                Sunny
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
+
+<div class="container">
+    <div class="weather-table overflow-hidden d-flex flex-wrap rounded-3 mb-5">
+    <div class="current-day overflow-hidden">
+        <div class="date-1-3 d-flex justify-content-between">
+
+            <div class="day" id="cDay"></div>
+
+            <div class="date" id="cDate"></div>
+
+        </div>
+
+        <div class="content-1-3">
+            <div class="location" id="location"></div>
+            <div class="degree d-flex align-items-end flex-wrap">
+                <div class="num" id="cNum"></div>
+
+                <div class="current-icon">
+                    <img src="" alt="" id="cIcon">
+                </div>
+            </div>
+            <div class="custom" id="custom1">Sunny</div>
+
+            <span><img src="images/icon-umberella.png" alt="umberella" id="humidity"> 20%</span>
+            <span><img src="images/icon-wind.png" alt="wind" id="wind"> 18km/h</span>
+            <span><img src="images/icon-compass.png" alt="icon-compass" id="direction">East</span>
+        </div>
+    </div>
+    <div class="next-day text-center">
+
+        <div class="date-2" id="day2"></div>
+        <div class="content-2">
+
+            <div class="icon">
+                <img src="" alt="" id="icon2">
+            </div>
+
+            <div class="degree">
+                <div class="num" id="num2"></div>
+                <small id="small2">
+
+                </small>
+            </div>
+
+            <div class="custom" id="custom2">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="next-day text-center">
+
+        <div class="date-1-3" id="day3">friday</div>
+        <div class="content-1-3">
+
+            <div class="icon">
+                <img src="" id="icon3" alt="">
+            </div>
+
+            <div class="degree">
+
+                <div class="num" id="num3">45.8 C</div>
+                <small id="small3">
+                    29.9 c
+                </small>
+            </div>
+
+            <div class="custom" id="custom3">
+                Sunny
+            </div>
+        </div>
+
+    </div>
+</div></div>
+        
+        <!--</div>-->
+        <!--</div>-->
 
     </main>
 
