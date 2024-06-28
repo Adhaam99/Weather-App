@@ -19,24 +19,29 @@ const findBtn=document.querySelector("#find")
 
 
 
-async function weatherApi(city = "cairo") {
+async function weatherApi(city) {
 
     let http = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=c25ce22b284d4f8085e130554242006&q=${city}&days=3`)
     let res = await http.json()
 
-    
+    return res
 
-        currentday(res)
-        nextDay2(res)
-        nextDay3(res)
-    
-    
-  
-
+        
 
 }
 
-weatherApi()
+async function weatherDisplay(city = "cairo"){
+
+    let result= await weatherApi(city)
+
+    currentday(result)
+    nextDay2(result)
+    nextDay3(result)
+
+}
+
+weatherDisplay()
+
 
 function currentday(data) {
 
@@ -77,16 +82,8 @@ function nextDay3(data){
 
 search.addEventListener("input",function(){
 
-    async function searchApi(val){
-
-        let http = await fetch(`http://api.weatherapi.com/v1/search.json?key=c25ce22b284d4f8085e130554242006&q=${val}`)
-        let res = await http.json()
-        weatherApi(res[1].name)
-
-    }
-
-    searchApi(search.value)
-
+    weatherDisplay(search.value)
+    
 })
 
 
