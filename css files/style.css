@@ -58,6 +58,36 @@ nav img {
 
 }
 
+.navbar-toggler {
+
+    background-color: transparent;
+    margin-top: 30px ;
+    margin-right: 15px;
+    border: none !important;
+    outline: none !important;
+    color: white;
+    padding: 20px !important;
+    border-radius: 40px !important;
+    transition: 0.1s !important;
+}
+
+.navbar-toggler:hover{
+
+    color: #009ad8 !important;
+    border: #009ad8 2px solid !important;
+
+}
+
+.navbar-toggler:focus{
+
+    color: #009ad8 !important;
+    border: #009ad8 2px solid !important;
+    box-shadow: none !important;
+
+}
+
+
+
 .header {
 
     height: 100vh;
@@ -80,17 +110,17 @@ nav img {
     color: rgba(128, 128, 128, 0.756) !important;
 }
 
-main{
+main {
 
     position: relative;
-    
+
 }
 
-.weather-table{
+.weather-table {
 
     position: relative;
     margin-top: -500px;
-    
+
 
 }
 
@@ -118,28 +148,29 @@ form {
     margin-bottom: 70px;
 }
 
-.current-day,.next-day{
+.current-day,
+.next-day {
 
-    width: 33.33%; 
+    width: 33.33%;
 }
 
-.bg-color-1-3{
+.bg-color-1-3 {
 
     background-color: #2D303D;
 
 }
 
-.bg-color-2{
+.bg-color-2 {
     background-color: #222530;
 
 }
 
-.tom{
+.tom {
 
     background-color: #262936;
 }
 
-.tom-next{
+.tom-next {
 
     background-color: #323544;
 }
@@ -167,26 +198,26 @@ form {
     padding: 10px;
 }
 
-.content-1-3{
+.content-1-3 {
 
     background-color: #323544;
     padding: 30px 20px;
 }
 
-.content-2{
+.content-2 {
 
     background-color: rgb(38, 41, 54);
     padding: 30px 20px;
 }
 
-.location{
+.location {
 
     font-size: 18px;
     line-height: 27px;
     color: rgb(191, 193, 200);
 }
 
-.current-day .degree .num{
+.current-day .degree .num {
 
     font-size: 90px;
     line-height: 135px;
@@ -204,34 +235,34 @@ sup {
     vertical-align: baseline;
 }
 
-.current-day .degree .current-icon img{
+.current-day .degree .current-icon img {
 
     width: 90px;
     height: 90px;
     margin-bottom: 20px;
 }
 
-.custom{
+.custom {
 
     color: #009ad8;
     margin: 20px 0;
 }
 
-small{
+small {
 
     color: rgb(191, 193, 200);
     font-weight: 300;
     font-size: 16px;
 }
 
-.next-day .icon img{
+.next-day .icon img {
 
     width: 48px;
     height: 48px;
     margin-bottom: 20px;
 }
 
-.next-day .num{
+.next-day .num {
 
     font-size: 24px;
     font-weight: 700;
@@ -239,11 +270,11 @@ small{
     color: white;
 }
 
-.current-day span{
+.current-day span {
 
     font-size: 14px;
     font-weight: 300;
-    color: rgb(191, 193, 200)    ;
+    color: rgb(191, 193, 200);
     line-height: 21px;
     margin-right: 20px;
 }
@@ -251,11 +282,11 @@ small{
 
 /*footer*/
 
-footer{
+footer {
     background-color: #262936;
 }
 
-ul .icon-circle{
+ul .icon-circle {
     width: 40px;
     height: 40px;
     background-color: var(--main-color);
@@ -266,14 +297,9 @@ ul .icon-circle{
     border-radius: 50%;
 }
 
-footer p{
+footer p {
     font-weight: 300;
     line-height: 21px;
     font-size: 14px;
     color: rgb(191, 193, 200);
 }
-
-
-
-
-
