@@ -87,7 +87,26 @@ search.addEventListener("input",function(){
 })
 
 
+findBtn.addEventListener("click",function(){
 
+    navigator.geolocation.getCurrentPosition(success)
+
+    function success(pos){
+
+        let position=pos.coords
+
+        console.log(position.latitude);
+
+        weatherDisplay(`${position.latitude},${position.longitude}`)
+    }
+
+    success()
+})
+
+document.querySelector("form").addEventListener("submit",function(e){
+
+    e.preventDefault()
+})
 
 
 
